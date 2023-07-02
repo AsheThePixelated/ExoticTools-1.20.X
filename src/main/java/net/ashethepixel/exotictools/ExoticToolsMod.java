@@ -1,6 +1,9 @@
 package net.ashethepixel.exotictools;
 
 import com.mojang.logging.LogUtils;
+import net.ashethepixel.exotictools.item.ModItems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -26,6 +29,10 @@ public class ExoticToolsMod {
     public ExoticToolsMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+
+        ModItems.register(modEventBus);
+
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -39,7 +46,10 @@ public class ExoticToolsMod {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.MOISSANITE);
+            event.accept(ModItems.RAW_MOISSANITE);
+        }
     }
 
     @SubscribeEvent
