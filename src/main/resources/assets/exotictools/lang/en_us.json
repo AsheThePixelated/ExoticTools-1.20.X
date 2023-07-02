@@ -1,4 +1,10 @@
 {
   "item.exotictools.moissanite": "Moissanite",
-  "item.exotictools.raw_moissanite": "Raw Moissanite"
+  "item.exotictools.raw_moissanite": "Raw Moissanite",
+
+  "block.exotictools.moissanite_block": "Block of Moissanite",
+  "block.exotictools.raw_moissanite_block": "Raw Block of Moissanite",
+  "block.exotictools.moissanite_ore": "Moissanite Ore",
+
+  "creativetab.exotic_tools_tab": "Exotic Tools"
 }
