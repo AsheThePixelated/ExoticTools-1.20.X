@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MMM",
+    "MMM",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "exotictools:moissanite"
+    }
+  },
+  "result": {
+    "item":"exotictools:moissanite_block"
+  }
+}

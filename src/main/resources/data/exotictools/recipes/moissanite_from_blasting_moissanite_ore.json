@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.4,
+  "group": "moissanite",
+  "ingredient": {
+    "item": "exotictools:moissanite_ore"
+  },
+  "result": "exotictools:moissanite"
+}
